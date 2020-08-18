@@ -26,6 +26,10 @@
         </span>
     </div>
 
+    <ol id="app-3">
+        <todo-item v-for='item in groceryList' v-bind:todo='item' v-bind:key='item.id'></todo-item>
+    </ol>
+
     <script src="index.js"></script>
 </body>
 

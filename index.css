@@ -1,6 +1,11 @@
-div {
+div, ol {
     margin: 2rem;
     padding: 1rem;
     font-family: 'arial';
     border: 1px solid gray;
+}
+
+li {
+    padding: 1rem;
+    margin: 0 1rem;
 }
