@@ -6,5 +6,6 @@ var app = new Vue({
         image: './assets/vmSocks-green-onWhite.jpg',
         imageAlt: 'alt image text',
         url: 'www.danielnorris.co.uk',
+        inStock: true,
     }
 })
