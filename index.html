@@ -8,27 +8,31 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="index.css">
+
+    <!-- vue from cdn -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 </head>
 
 <body>
 
+
     <div id="app">
-        {{ message }}
-    </div>
+        <div class="nav-bar">
+            <a :href="url">Link</a>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img :src="image" :alt="imageAlt">
+            </div>
 
-    <div id="app-2">
-        <span v-bind:title="message">
-            Hover your mouse over me for a few seconds
-            to see my dynamically bound title!
-        </span>
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+            </div>
+        </div>
     </div>
-
-    <ol id="app-3">
-        <todo-item v-for='item in groceryList' v-bind:todo='item' v-bind:key='item.id'></todo-item>
-    </ol>
 
     <script src="index.js"></script>
 </body>
