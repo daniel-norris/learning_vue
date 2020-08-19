@@ -4,7 +4,7 @@ var app = new Vue({
         product: 'Socks',
         brand: 'Vue Mastery',
         description: 'Socks are socks.',
-        image: './assets/vmSocks-green-onWhite.jpg',
+        selectedVariant: 0,
         imageAlt: 'alt image text',
         url: 'www.danielnorris.co.uk',
         inventory: 100,
@@ -35,13 +35,17 @@ var app = new Vue({
         removeFromCart() {
             this.cart > 0 ? this.cart -= 1 : null
         },
-        updateProduct(variantImage) {
-            this.image = variantImage
+        updateProduct(index) {
+            this.selectedVariant = index
+            console.log(index)
         }
     },
     computed: {
         title() {
             return this.brand + ' ' + this.product
+        },
+        image() {
+            return this.variants[this.selectedVariant].variantImage
         }
     }
 })
