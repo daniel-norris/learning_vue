@@ -91,3 +91,7 @@ body {
   .linethrough {
       text-decoration: line-through;
   }
+
+  .flex {
+      display: flex;
+  }
