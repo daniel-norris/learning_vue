@@ -19,7 +19,10 @@ var app = new Vue({
                 variantColor: "blue"
             }
         ],
-        sizes: ["S", "M", "L", "XL", "XXL"],
+        sizes: {
+            display: false,
+            range: ["S", "M", "L", "XL", "XXL"]
+        },
         cart: 0,
     }
 })
