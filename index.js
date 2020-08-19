@@ -7,7 +7,7 @@ var app = new Vue({
         imageAlt: 'alt image text',
         url: 'www.danielnorris.co.uk',
         inventory: 100,
-        onSale: true,
+        onSale: false,
         details: ["80% cotton", "20% polyester", "Gender-neutral"],
         variants: [
             {
